@@ -1,0 +1,17 @@
+module CSDL2 [system] {
+    
+    umbrella header "shim.h"
+    link "SDL2"
+    export *
+    
+    module image [system] {
+        link "SDL2_image"
+        export *
+    }
+    
+    module ttf [system] {
+        link "SDL2_ttf"
+    }
+
+    
+}
